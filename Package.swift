@@ -3,15 +3,15 @@ import PackageDescription
 
 let package = Package(
 	name: "GXAppleMaps",
-	platforms: [.iOS("13.0"), .tvOS("13.0"), .visionOS("1.0")],
+	platforms: [.iOS("15.0"), .tvOS("18.0"), .visionOS("2.0")],
 	products: [
 		.library(
 			name: "GXAppleMaps",
 			targets: ["GXAppleMapsWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreModule_Common_Maps.git", exact: "3.0.0-rc.8"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "3.0.0-rc.8")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreModule_Common_Maps.git", exact: "3.0.0-rc.15"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "3.0.0-rc.15")
 	],
 	targets: [
 		.target(name: "GXAppleMapsWrapper",
@@ -23,8 +23,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXAppleMaps",
-			url: "https://pkgs.genexus.dev/iOS/preview/GXAppleMaps-3.0.0-rc.8.xcframework.zip",
-			checksum: "6c6073c37a41b7780e0c22f1d5ed13327ce319880ee50001c450324e7729df2e"
+			url: "https://pkgs.genexus.dev/iOS/preview/GXAppleMaps-3.0.0-rc.15.xcframework.zip",
+			checksum: "9b05de68358cd195e6231453ac6bdd67d0b3a45122247069815597dcfeca9920"
 		)
 	]
 )
